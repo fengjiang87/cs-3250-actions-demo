@@ -17,7 +17,7 @@ To install pytest, open your terminal and run the command ```pip install -U pyte
 
 ### Run pytest 
 
-Now that you have installed pytest, run it using the command ```pytest```. There are many optional commands which you can see by running ```pytest --help```, but for this simple demo, pytest will automatically discover and run our tests (pytest will run all files that match the form "test_*.py" or "*_test.py"). 
+Now that you have installed pytest, run it using the command ```pytest```. There are many optional commands which you can see by running ```pytest --help```, but for this simple demo, pytest will automatically discover and run our tests (pytest will run all files that match the form "test_\*.py" or "\*_test.py"). 
 
 Upon running pytest, you should see some terminal output showing the results of the tests. 
 
@@ -37,7 +37,7 @@ For this demo, you can download these two files by clicking the links and doing 
 
 Now that you have downloaded these files, we will need to put them in a special folder so that GitHub Actions knows where to find them. 
 
-In the root of this demo repo, create a directory called ".github" (the "." is important so make sure to include it), and then within .github/, create another directory called "workflows".
+In the root of this demo repo, create a directory called ".github" (the "." is important so make sure to include it. Also, this folder will be hidden--make sure to set hidden folders to be visible on your machine), and then within .github/, create another directory called "workflows".
 
 Move both pytest.yml and ruff.yml into workflows. 
 
@@ -54,7 +54,7 @@ def test_false():
     assert False, "This will always fail"
 ```
 
-Finally, go to https://github.com/{your_username}/cs-3250-demo/settings/actions and update the Workflow Permissions at the bottom of the page to allow "Read and write permissions" as well as "Allow GitHub Actions to create and approve pull requests". See the screenshot below:
+Finally, go to https://github.com/{your_username}/cs-3250-actions-demo/settings/actions and update the Workflow Permissions at the bottom of the page to allow "Read and write permissions" as well as "Allow GitHub Actions to create and approve pull requests". See the screenshot below:
 
 ![workflow-permissions.png](/workflow_permissions.png)
 
@@ -62,7 +62,7 @@ Finally, go to https://github.com/{your_username}/cs-3250-demo/settings/actions 
 
 When we attempt to push this code to our remote repo on GitHub, Actions will run the ruff linter & formatter as well as the unit tests.
 
-We can view past runs' results and re-run jobs here: https://github.com/{your_username}/cs-3250-demo/actions
+We can view past runs' results and re-run jobs here: https://github.com/{your_username}/cs-3250-actions-demo/actions
 
 A failed pytest run should be visible here if you merged in the failing test above.
 

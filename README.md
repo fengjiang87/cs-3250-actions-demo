@@ -1,11 +1,11 @@
-# cs-3250-demo
+# cs-3250-actions-demo
 ## A simple repo to demonstrate cloning, pytest, and GitHub Actions.
 
 ### Clone the repo
 
 In VS Code, open a new window, and click "Clone Git Repository...".
 
-At the top of the window, paste in this repo's .git link, https://github.com/bednie/cs-3250-demo.git, and hit enter. 
+At the top of the window, paste in this repo's .git link, https://github.com/bednie/cs-3250-actions-demo.git, and hit enter. 
 
 Then select the local folder where you would like this repo to be located. It is a good idea to put it in its own temp folder so it can be deleted easily once you finish this demo.
 

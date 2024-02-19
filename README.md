@@ -1,5 +1,5 @@
 # cs-3250-actions-demo
-## A simple repo to demonstrate cloning, pytest, and GitHub Actions.
+## A simple repo to demonstrate cloning, pytest, and GitHub Actions for automated unit testing, linting, and formatting
 
 ### Clone the repo
 

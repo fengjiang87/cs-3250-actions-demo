@@ -43,20 +43,18 @@ Move both pytest.yml and ruff.yml into workflows.
 
 ### Running GitHub Actions
 
-
 Now, whenever we merge code into this repo (whether by pull request or pushing), these Actions will run on the repo. 
 
 To test this, we will need to push the cloned repo, which is just a local repo, to GitHub. 
 
-Once you have pushed this demo repo to your GitHub account, make some changes in the file "demo_functions.py" and add a failing unit test to "test_demo_functions.py":
+Once you have pushed this demo repo to your GitHub account, add a failing unit test to "test_demo_functions.py":
 
 ```
 def test_false():
-    """Always fails."""
     assert False, "This will always fail"
 ```
 
-Finally, go to https://github.com/{your_username}/cs-3250-demo/settings/actions and update the Workflow Permissions at the bottom of the page to allow "Read and write permissions" as well as "Allow GitHub Actions to create and approve pull requests".
+Finally, go to https://github.com/{your_username}/cs-3250-demo/settings/actions and update the Workflow Permissions at the bottom of the page to allow "Read and write permissions" as well as "Allow GitHub Actions to create and approve pull requests". See the screenshot below:
 
 ![workflow-permissions.png](/workflow_permissions.png)
 
@@ -66,4 +64,12 @@ When we attempt to push this code to our remote repo on GitHub, Actions will run
 
 We can view past runs' results and re-run jobs here: https://github.com/{your_username}/cs-3250-demo/actions
 
+A failed pytest run should be visible here if you merged in the failing test above.
 
+### Next steps 
+
+This is just a demo: it is possible to add more Actions, and even disallow merges with failing tests, by editing the .yml files in ".github/workflows/".
+
+Add a workflow status [badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge).
+
+Check out the [Actions documentation](https://docs.github.com/en/actions). 

@@ -17,7 +17,7 @@ jobs:
         run: pip install ruff
 
       - name: Check code with ruff
-        run: ruff check -v
+        run: ruff check -v --fix
 
       - name: Format code with ruff
         run: ruff format -v

@@ -53,7 +53,7 @@ Once you have pushed this demo repo to your GitHub account, make some changes in
 ```
 def test_false():
     """Always fails."""
-    return False
+    assert False, "This will always fail"
 ```
 
 Finally, go to https://github.com/{your_username}/cs-3250-demo/settings/actions and update the Workflow Permissions at the bottom of the page to allow "Read and write permissions" as well as "Allow GitHub Actions to create and approve pull requests".

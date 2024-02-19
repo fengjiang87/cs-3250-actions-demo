@@ -3,11 +3,11 @@
 
 ### Clone the repo
 
-First, make sure you are signed in to GitHub. Fork this repo by visiting https://github.com/bednie/cs-3250-actions-demo/fork and create a fork. 
+First, make sure you are signed in to GitHub. Fork this repo by visiting https://github.com/bednie/cs-3250-actions-demo/fork. Create a fork with yourself as the owner. 
 
-In VS Code, open a new window, and click "Clone Git Repository...".
+Next, in VS Code, open a new window, and click "Clone Git Repository...".
 
-At the top of the window, paste in this repo's .git link, https://github.com/{your_username}/cs-3250-actions-demo.git, and hit enter. 
+At the top of the window, paste in your repo's .git link, https://github.com/{your_username}/cs-3250-actions-demo.git, and hit enter. 
 
 Then select the local folder where you would like this repo to be located. It is a good idea to put it in its own temp folder so it can be deleted easily once you finish this demo.
 
@@ -49,7 +49,7 @@ First, we will need to push the changes we made in the repo--which is a local re
 
 Now, whenever we merge code into this repo (whether by pull request or pushing), these Actions will run on the repo. 
 
-Once you have pushed this demo repo to your GitHub account, add a failing unit test to "test_demo_functions.py":
+Once you have pushed this demo repo to your GitHub account, add a failing unit test to "test_demo_functions.py", and then merge in these changes, too:
 
 ```
 def test_false():

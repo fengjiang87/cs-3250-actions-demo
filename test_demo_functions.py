@@ -13,6 +13,7 @@ def test_multiply():
     assert multiply(-1, 1) == -1, "Should be -1"
     assert multiply(-1, -1) == 1, "Should be 1"
 
+
 def false():
     """Always fails."""
     return False

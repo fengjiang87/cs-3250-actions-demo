@@ -51,7 +51,7 @@ To test this, we will need to push the cloned repo, which is just a local repo, 
 Once you have pushed this demo repo to your GitHub account, make some changes in the file "demo_functions.py" and add a failing unit test to "test_demo_functions.py":
 
 ```
-def false():
+def test_false():
     """Always fails."""
     return False
 ```

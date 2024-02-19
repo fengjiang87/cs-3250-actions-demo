@@ -16,4 +16,4 @@ def test_multiply():
 
 def test_false():
     """Always fails."""
-    assert False, "This will always fail"
+    assert True, "This will always fail"

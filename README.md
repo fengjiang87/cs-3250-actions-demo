@@ -1,4 +1,4 @@
-# cs-3250-actions-demo testtest
+# cs-3250-actions-demo hihihi
 ## Step-by-step guide to cloning a repo, installing & running pytest, and setting up GitHub Actions for automated unit testing, linting, and formatting
 
 ### Clone the repo
